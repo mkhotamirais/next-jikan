@@ -22,7 +22,9 @@ export default function Search() {
   };
 
   const handleFocus = () => {
-    searchRef.current.select();
+    if (search) {
+      searchRef.current.select();
+    }
   };
 
   useEffect(() => {
@@ -40,13 +42,12 @@ export default function Search() {
     >
       <div className="flex mt-1 rounded-xl overflow-hidden bg-jikan-primary sm:bg-jikan-secondary">
         <input
-          ref={searchRef}
+          ref={search ? searchRef : null}
           type="search"
           className="bg-inherit w-full p-2 focus:outline-none"
           value={keyword}
           placeholder="Search here.."
           onChange={(e) => setKeyword(e.target.value)}
-          autoFocus
           onFocus={handleFocus}
         />
         <button type="submit" className="bg-jikan-accent w-12 flex items-center justify-center hover:opacity-80">

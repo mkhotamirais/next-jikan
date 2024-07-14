@@ -9,7 +9,7 @@ export default function Konten({ children }) {
   };
 
   return (
-    <main onMouseEnter={handleMouseEnter} className="p-4">
+    <main onMouseEnter={handleMouseEnter} className="p-3">
       {children}
     </main>
   );

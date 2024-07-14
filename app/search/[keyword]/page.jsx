@@ -13,7 +13,7 @@ export default function SearchKeyword({ params }) {
 
   useEffect(() => {
     const getAnime = async () => {
-      const data = await fetchData({ resource: "anime", query: `q=${params.keyword}&page=${page}` });
+      const data = await fetchData("anime", `q=${params.keyword}&page=${page}`);
       setSearchResult(data);
     };
     getAnime();

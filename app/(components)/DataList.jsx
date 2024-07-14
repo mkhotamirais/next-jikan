@@ -3,11 +3,15 @@ import Link from "next/link";
 
 export default function DataList({ data }) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-8 gap-2">
+    <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-8 gap-1">
       {data?.data?.length > 0 ? (
         data?.data?.map((item) => {
           return (
-            <Link href="" key={item.mal_id} className="relative rounded-md overflow-hidden h-72">
+            <Link
+              href={`/detail/${item.mal_id}`}
+              key={item.mal_id}
+              className="relative rounded-md overflow-hidden h-72"
+            >
               <h2 className="absolute z-20 w-full bottom-0 bg-black/70 min-h-20 px-2 text-center flex items-center justify-center">
                 {item.title}
               </h2>
