@@ -91,7 +91,7 @@ export const Pagination = ({ lastPage, total }: { lastPage: number; total: numbe
         <button
           type="button"
           onClick={handleNext}
-          className="bg-jikan-accent p-1 leading-none rounded-lg hover:opacity-80 transition-all border-jikan-accent"
+          className="bg-accent p-1 leading-none rounded-lg hover:opacity-80 transition-all border-accent"
         >
           Next
         </button>

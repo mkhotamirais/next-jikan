@@ -8,7 +8,7 @@ import DataList from "./data-list";
 export default function TopAnimeClient({ topAnime }: { topAnime: AnimeList }) {
   return (
     <>
-      <DataListTitle title="Top Anime" />
+      <DataListTitle title="Top Anime" href="/top-anime" />
       <DataList data={topAnime.data} />
     </>
   );

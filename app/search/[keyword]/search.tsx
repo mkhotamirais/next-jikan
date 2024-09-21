@@ -39,10 +39,10 @@ export function Search() {
     <div
       className={`${
         cari ? "scale-y-100" : "scale-y-0"
-      } transition origin-top sm:scale-y-100 fixed sm:static top-16 left-0 right-0 bg-secondary sm:bg-inherit p-3 sm:p-0`}
+      } z-50 transition origin-top sm:scale-y-100 fixed sm:static top-16 left-0 right-0 bg-gray-900 sm:bg-inherit p-3 sm:p-0`}
     >
-      <form onSubmit={onSubmit} className="hidden sm:flex gap-2">
-        <Input id="cari" name="cari" placeholder="Search here.." className="w-full sm:w-auto" />
+      <form onSubmit={onSubmit} className="flex gap-2">
+        <Input id="cari" name="cari" placeholder="Search here.." className="w-full sm:w-auto outline-b" />
         <Button type="submit" className="" size={"icon"}>
           <SearchIcon className="size-4" />
         </Button>
