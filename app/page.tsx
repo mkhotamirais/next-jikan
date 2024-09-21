@@ -8,6 +8,7 @@ export default async function HomePage() {
       <Suspense fallback={<LoaderFade />}>
         <TopAnime />
       </Suspense>
+      <div></div>
     </div>
   );
 }
