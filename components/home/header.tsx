@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ModeToggle } from "../mode-toggle";
-import { Search, SearchTrigger } from "@/app/search/[key]/search";
+import { Search, SearchTrigger } from "@/app/search/[keyword]/search";
 
 export default function Header() {
   return (
