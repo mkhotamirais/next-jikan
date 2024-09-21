@@ -20,6 +20,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        arvo: ["Arvo", "serif"],
+        roboto: ["Roboto", "sans-serif"],
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

@@ -1,15 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import { ModeToggle } from "../mode-toggle";
+import { Search, SearchTrigger } from "@/app/search/[key]/search";
 
 export default function Header() {
   return (
-    <header className="border-b">
+    <header className="z-50 border-b sticky top-0 backdrop-blur bg-white/50 dark:bg-black/50">
       <div className="container">
         <div className="h-16 flex justify-between items-center">
           <div>
             <Logo />
           </div>
-          <div>
+          <div className="flex gap-3">
+            <SearchTrigger />
+            <Search />
             <ModeToggle />
           </div>
         </div>
