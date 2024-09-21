@@ -6,6 +6,7 @@ import { TrailerYoutube } from "./trailer-youtube";
 export default async function AnimeDetailId({ params: { id } }: { params: { id: string } }) {
   const result = await fetchData(`anime/${id}`);
   const anime: AnimeListData = result?.data;
+
   return (
     <section className="max-w-4xl p-4 rounded-t mx-auto bg-secondary my-4">
       <h2 className="text-3xl font-bold mb-5 mt-3">{anime?.title}</h2>

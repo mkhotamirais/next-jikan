@@ -14,7 +14,7 @@ export default function DataList({ data }: { data: AnimeList["data"] }) {
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 50 }}
           animate={{ opacity: 1, scale: 1, y: 0, transition: { delay: i * 0.05 } }}
-          key={item.mal_id}
+          key={i}
           className="relative h-72 w-full overflow-hidden group"
         >
           <div className="group-hover:translate-y-full transition absolute bg-black/50 h-24 bottom-0 left-0 right-0 flex items-center justify-center font-arvo text-center">

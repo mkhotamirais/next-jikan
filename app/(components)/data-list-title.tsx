@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-export default function DataListTitle({ title, keyword = "" }: { title: string; keyword: string }) {
+export default function DataListTitle({ title, keyword = "" }: { title: string; keyword?: string }) {
   return (
     <div className="py-4 flex justify-between">
       <h2 className="text-2xl font-arvo text-primary">
