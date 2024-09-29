@@ -44,7 +44,7 @@ export default function TopAnimeServer() {
           )}
         </>
       )}
-      <Pagination total={Number(total)} lastPage={Number(last_visible_page)} />
+      {/* <Pagination total={Number(total)} lastPage={Number(last_visible_page)} /> */}
     </div>
   );
 }

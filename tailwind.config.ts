@@ -10,14 +10,20 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "1rem",
-      screens: {
-        sm: "100%",
-        md: "100%",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1440px",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
+      // screens: {
+      //   sm: "100%",
+      //   md: "100%",
+      //   lg: "1024px",
+      //   xl: "1280px",
+      //   "2xl": "1440px",
+      // },
     },
     extend: {
       fontFamily: {

@@ -46,7 +46,7 @@ export default function SearchKeyword({ params }: { params: { keyword: string } 
           )}
         </>
       )}
-      <Pagination total={Number(total)} lastPage={Number(last_visible_page)} />
+      {/* <Pagination total={Number(total)} lastPage={Number(last_visible_page)} /> */}
     </div>
   );
 }
